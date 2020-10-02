@@ -1,0 +1,108 @@
+/***** Base Styles *****/
+
+body {
+    background-color: white;
+    color: #087e8b;
+    font-family: 'Zilla Slab';
+    font-size: 24px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h6 {
+    text-align: center;
+}
+
+h1, h3, h4 {
+    font-family: 'Pridi';
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 112px;
+}
+
+h4, h5 {
+    font-size: 24px;
+}
+
+h5, h6 {
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+/***** Blocks *****/
+
+.full-width {
+    overflow: auto;
+    width: 1400px;
+    margin: auto;
+}
+
+.half-width {
+    float: left;
+    text-align: left;
+    width: 700px;
+}
+
+.third-width {
+    float: left;
+    text-align: center;
+    width: 33.3333%;
+}
+
+
+/***** Hero Image and Text *****/
+
+header {
+    background-image: url('../../img/hero-image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    margin: 0px;
+    overflow: auto;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 240px 0px 215px;
+}
+
+
+/***** Gallery *****/
+
+#gallery {
+    text-align: center;
+}
+
+#gallery img {
+    width: 550px;
+    margin: 40px 0px;
+    margin-left: 80px;
+    box-sizing: border-box;
+    border: solid 1px #b7b7b7;
+}
+
+
+/***** Contact *****/
+
+#contact {
+    background: #095156;
+    color: white;
+    overflow: hidden;
+}
+
+#contact h3 {
+    margin-bottom: 20px;
+}

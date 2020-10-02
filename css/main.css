@@ -1,0 +1,160 @@
+/***** Base Styles *****/
+
+body {
+    background-color: white;
+    color: #087e8b;
+    font-family: 'Zilla Slab';
+    font-size: 24px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h6 {
+    text-align: center;
+}
+
+h1, h3, h4 {
+    font-family: 'Pridi';
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 112px;
+}
+
+h4, h5 {
+    font-size: 24px;
+}
+
+h5, h6 {
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+    /* This is effectively just images that aren't from the contact section */
+#portfolio img, #about img {
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 100px;
+    width: 550px;
+}
+
+section {
+    margin: 0px;
+}
+
+/***** Blocks *****/
+
+.full-width {
+    overflow: auto;
+    width: 1400px;
+}
+
+.half-width {
+    float: left;
+    text-align: left;
+    width: 700px;
+}
+
+.third-width {
+    float: left;
+    text-align: center;
+    width: 33.3333%;
+}
+
+
+/***** Hero Image and Text *****/
+
+header {
+    background-image: url('../img/hero-image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin: 0px;
+    overflow: auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.hero-text-box {
+    margin: 350px auto 0px auto;
+    width: 820px;
+}
+
+.hero-text-box h1 {
+    color: #bdbf09;
+    font-size: 60px;
+}
+
+.hero-text-box h2 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+/***** Portfolio *****/
+
+#portfolio {
+    margin-bottom: 70px;
+}
+
+.full-width {
+    margin: auto;
+    width: 1400px;
+}
+
+#portfolio .half-width {
+    margin-bottom: 49px;
+}
+
+#portfolio h4, #portfolio h5, #portfolio p {
+    margin: 0px;
+    text-align: left;
+}
+
+#portfolio h4 {
+    margin-bottom: 6px;
+}
+
+#portfolio h5 {
+    margin-bottom: 36px;
+}
+
+#portfolio img {
+    border: solid 1px #b7b7b7;
+}
+
+
+/***** About *****/
+
+#about {
+    background: #087e8b;
+    color: white;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+#about h4, #about p {
+    margin-top: 0px;
+    text-align: left;
+}
+
+/***** Contact *****/
+
+#contact {
+    background: #095156;
+    color: white;
+    overflow: hidden;
+}
+
+#contact h3 {
+    margin-bottom: 20px;
+}
