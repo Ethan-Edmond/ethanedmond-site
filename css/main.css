@@ -166,6 +166,30 @@ h3 {
     padding-bottom: 30px;
 }
 
+.project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    background: red;
+}
+
+.project img {
+    background: blue;
+    box-sizing: border-box;
+    border: 2px solid #646e7a;
+}
+
+.project-content {
+    padding: 10px;
+    box-sizing: border-box;
+    background: green;
+}
+
+.project img, .project-content {
+    width: 50%;
+}
+
 #about {
     background-image: url("../img/glitch-art-background-3.png");
     background-size: cover;
