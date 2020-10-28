@@ -1,15 +1,21 @@
-var galleryButton = document.getElementById("galleryButton");
-var aboutButton = document.getElementById("aboutButton");
-var addThickeners = function (element) {
+var makeButton = function (name) {
+    var button = {};
+    button.htmElement = document.getElementById(name);
+
     var thicken = function () {
-        element.style.fontWeight = 700;
+        button.htmElement.style.fontWeight = 700;
     };
+    button.htmElement.addEventListener("mouseenter",thicken);
+
     var thinner = function () {
-        element.style.fontWeight = 100;
+        button.htmElement.style.fontWeight = 100;
     };
-    element.addEventListener("mouseenter", thicken);
-    element.addEventListener("mouseleave", thinner);
+    button.htmElement.addEventListener("mouseleave", thinner);
+
+    return button;
 };
 
-addThickeners(galleryButton);
-addThickeners(aboutButton);
+var buttonList = ["galleryButton", "aboutButton", "projectButton", "aboutSectButton", "unpluggedButton", "magic8Button", "rogueButton"];
+for (var i = 0; i < buttonList.length; i++) {
+    buttonList[i] = makeButton(buttonList[i]);
+}
