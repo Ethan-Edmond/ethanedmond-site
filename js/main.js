@@ -25,24 +25,3 @@ var buttonList = ["gallery-button", "about-button", "project-button", "about-sec
 for (let i = 0; i < buttonList.length; i++) {
   buttonList[i] = makeButton(buttonList[i]);
 }
-
-var makeImage = function (name) {
-  var image = makeElem(name);
-
-  var expand = function () {
-    image.htmElement.style.borderWidth = "0px";
-  };
-  image.htmElement.addEventListener("mouseenter",expand);
-
-  var compress = function () {
-    image.htmElement.style.borderWidth = "5px";
-  };
-  image.htmElement.addEventListener("mouseleave",compress);
-
-  return image;
-};
-
-var imageList = ["unplugged-image", "magic-8-ball-image", "rogue-pickings-image"];
-for (let i = 0; i < imageList.length; i++) {
-  imageList[i] = makeImage(imageList[i]);
-};
