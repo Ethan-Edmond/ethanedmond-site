@@ -97,8 +97,9 @@ html {
 }
 
 ul {
+    color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
     font-family: "IBM Plex Mono";
@@ -106,9 +107,8 @@ ul {
     font-weight: 100;
     font-style: italic;
     margin: 0;
-    padding: 8px 20%;
+    padding: 8px 0;
     background: #535d69;
-    color: white;
     text-transform: capitalize;
     border: 0px solid #646e7a;
     border-width: 0 0 1px 0;
@@ -135,12 +135,12 @@ a {
     margin: 0;
     width: 100%;
     height: 406px;
+    color: #101519;
 }
 
 h1 {
     margin: 0;
     padding: 0 20% 0% 10px;
-    color: white;
     font-family: "Zilla Slab";
     font-size: 2.25em;
 }
@@ -154,10 +154,9 @@ h1 {
 h2 {
     margin: 0;
     margin-bottom: 30px;
-    color: white;
     font-family: "IBM Plex Mono";
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-style: italic;
 }
 
@@ -225,13 +224,53 @@ footer {
     background: #030506;
 }
 
+footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+footer .fontawesome-icon {
+    display: inline;
+    font-size: 2em;
+    margin: 0;
+}
+
+footer #contact {
+    width: 50%;
+}
+
+footer .contact-text {
+    display: none;
+}
+
 footer .divider {
     border: 1px solid #21262a;
     width: 80%;
 }
 
+footer #social, footer #contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer #social {
+    width: 75%;
+}
+
 footer #copyright {
     text-align: center;
+    font-size: 0.8em;
 }
 
 
