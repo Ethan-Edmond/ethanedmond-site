@@ -484,6 +484,52 @@ footer #copyright {
     }
 }
 
+@media (min-width: 1200px) {
+    ul {
+        padding-right: 80%;
+        padding-left: 2%;
+    }
+    h1 {
+        font-size: 5em;
+        padding: 0;
+    }
+    #hero-area {
+        height: 800px;
+    }
+    #hero-area h2 {
+        padding: 60px 14%;
+        font-size: 2em;
+    }
+    #hero-area .content-wrapper {
+        padding: 170px 2% 0;
+        text-align: center;
+        width: 100%;
+    }
+    footer .content-wrapper {
+        flex-flow: row wrap;
+    }
+    footer .contact-text {
+        font-size: 1em;
+    }
+    footer #contact {
+        width: 51%;
+        box-sizing: border-box;
+    }
+    footer #social {
+        width: 49%;
+        box-sizing: border-box;
+        align-items: center;
+        margin: 32px 0;
+        padding: 0;
+    }
+    footer .fontawesome-icon {
+        font-size: 1.5em;
+    }
+    footer #copyright {
+        font-size: 0.75em;
+    }
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
