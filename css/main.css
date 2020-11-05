@@ -523,13 +523,6 @@ footer #copyright {
         text-align: center;
         float: none;
     }
-    #gallery-footer #contact {
-        padding: 20px 2px;
-        margin: 0;
-    }
-    #gallery-footer .contact-text {
-        padding-left: 0;
-    }
 }
 
 @media (min-width: 1200px) {
