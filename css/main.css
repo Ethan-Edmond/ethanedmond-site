@@ -505,6 +505,42 @@ footer #copyright {
         text-align: center;
         width: 100%;
     }
+    #portfolio h2 {
+        padding: 0 2%;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    #portfolio .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        padding: 28px 0;
+    }
+    #portfolio .project-divider {
+        display: none;
+    }
+    .project {
+        width: 33.3333%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .project h3, .project .project-image, .project .project-content {
+        float: none;
+        width: 100%;
+    }
+    .project h3 {
+        text-align: center;
+    }
+    .project .project-image {
+        box-sizing: border-box;
+        padding: 0 6%;
+    }
+    .project .project-content {
+        padding: 10px 6%;
+        text-align: justify;
+    }
     footer .content-wrapper {
         flex-flow: row wrap;
     }
