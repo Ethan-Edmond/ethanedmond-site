@@ -557,23 +557,28 @@ footer #copyright {
     }
     footer .content-wrapper {
         flex-flow: row wrap;
+        padding: 28px 2%;
     }
     footer .contact-text {
-        font-size: 1em;
+        font-size: 1.25em;
     }
     footer #contact {
-        width: 51%;
+        width: 50%;
         box-sizing: border-box;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        padding-left: 0%;
+        margin: 36px 0;
     }
     footer #social {
         width: 49%;
         box-sizing: border-box;
         align-items: center;
-        margin: 32px 0;
-        padding: 0;
+        margin: 34px 0;
+        padding: 0 5% 0 0;
     }
-    footer .fontawesome-icon {
-        font-size: 1.5em;
+    footer #contact .fontawesome-icon {
+        font-size: 1.75em;
     }
     footer #copyright {
         font-size: 0.75em;
