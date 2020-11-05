@@ -366,15 +366,33 @@ footer #copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.75em;
+        padding: 0 0 0 10px;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    #hero-area {
+        height: 512px;
+    }
+    ul {
+        padding-right: 66%;
+        padding-left: 4%;
+        justify-content: space-between;
+    }
+    #hero-area .content-wrapper {
+        width: 80%;
+        padding-left: 4%;
+    }
+    #hero-area h2 {
+        padding-right: 0;
+    }
+    main {
+        background: red;
+    }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
