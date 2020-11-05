@@ -29,37 +29,39 @@ for (let i = 0; i < buttonList.length; i++) {
 }
 
 // This is the code for the gallery carousel
-var galleryButtonBoard = document.getElementById("gallery-button-board").children;
-var makeGallery = function () {
-  var galleryMain = document.getElementById("gallery-main");
-  var galleryWrapper = galleryMain.children[0].children[0].children;
-  var galleryProjects = [];
-  for (let i = 1; i < galleryWrapper.length; i++){
-    galleryProjects.push(galleryWrapper[i]);
-  }
-  return galleryProjects;
-};
+if (document.getElementById("gallery-main") != null) {
+  var galleryButtonBoard = document.getElementById("gallery-button-board").children;
+  var makeGallery = function () {
+    var galleryMain = document.getElementById("gallery-main");
+    var galleryWrapper = galleryMain.children[0].children[0].children;
+    var galleryProjects = [];
+    for (let i = 1; i < galleryWrapper.length; i++){
+      galleryProjects.push(galleryWrapper[i]);
+    }
+    return galleryProjects;
+  };
 
-var galleryProjects = makeGallery();
+  var galleryProjects = makeGallery();
 
-var currentGalleryIndex = 0;
-galleryProjects[currentGalleryIndex].style.display = "block";
-
-var galleryCycleForward = function () {
-  galleryProjects[currentGalleryIndex].style.display = "none";
-  currentGalleryIndex += 1;
-  currentGalleryIndex = currentGalleryIndex % galleryProjects.length;
+  var currentGalleryIndex = 0;
   galleryProjects[currentGalleryIndex].style.display = "block";
-};
 
-var galleryCycleBack = function () {
-  galleryProjects[currentGalleryIndex].style.display = "none";
-  currentGalleryIndex -= 1;
-  if (currentGalleryIndex < 0) {
-    currentGalleryIndex = galleryProjects.length - 1;
-  }
-  galleryProjects[currentGalleryIndex].style.display = "block";
-};
+  var galleryCycleForward = function () {
+    galleryProjects[currentGalleryIndex].style.display = "none";
+    currentGalleryIndex += 1;
+    currentGalleryIndex = currentGalleryIndex % galleryProjects.length;
+    galleryProjects[currentGalleryIndex].style.display = "block";
+  };
 
-galleryButtonBoard[0].addEventListener("click", galleryCycleBack);
-galleryButtonBoard[1].addEventListener("click",galleryCycleForward);
+  var galleryCycleBack = function () {
+    galleryProjects[currentGalleryIndex].style.display = "none";
+    currentGalleryIndex -= 1;
+    if (currentGalleryIndex < 0) {
+      currentGalleryIndex = galleryProjects.length - 1;
+    }
+    galleryProjects[currentGalleryIndex].style.display = "block";
+  };
+
+  galleryButtonBoard[0].addEventListener("click", galleryCycleBack);
+  galleryButtonBoard[1].addEventListener("click",galleryCycleForward);
+}

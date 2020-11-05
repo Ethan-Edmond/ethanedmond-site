@@ -515,6 +515,21 @@ footer #copyright {
     footer #copyright {
         font-size: 1.25em;
     }
+    #gallery-main #portfolio .content-wrapper {
+        height: 974px;
+    }
+    #gallery-main .project-image, #gallery-main .project h3, #gallery-main .project .project-content {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    #gallery-footer #contact {
+        padding: 20px 2px;
+        margin: 0;
+    }
+    #gallery-footer .contact-text {
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 1200px) {
