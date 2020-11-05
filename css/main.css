@@ -444,6 +444,44 @@ footer #copyright {
         width: 50%;
         float: right;
     }
+    footer .content-wrapper {
+        padding: 24px 4%;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+    }
+    footer #contact {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    footer h2 {
+        width: 100%;
+    }
+    footer .divider {
+        display: none;
+    }
+    footer .contact-text {
+        display: inline;
+        padding: 20px;
+        font-size: 1.75em;
+    }
+    footer .fontawesome-icon {
+        font-size: 3em;
+    }
+    footer .contact-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer #social {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 12%;
+    }
+    footer #copyright {
+        font-size: 1.25em;
+    }
 }
 
 /* ==========================================================================
