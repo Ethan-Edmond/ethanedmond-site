@@ -374,6 +374,10 @@ footer #copyright {
     h2 {
         font-size: 1.75em;
     }
+    h3 {
+        font-size: 1.5em;
+        margin: 8px 0;
+    }
     #hero-area {
         height: 512px;
     }
@@ -389,10 +393,36 @@ footer #copyright {
     #hero-area h2 {
         padding-right: 0;
     }
-    main {
-        background: red;
+    #portfolio h2 {
+        padding-left: 4%;
     }
-
+    .project-divider {
+        width: 92%;
+        margin-left: 4%;
+    }
+    .project {
+        padding: 1px 4% 10px 4%;
+        overflow: auto;
+    }
+    .project h3 {
+        width: 30%;
+        float: left;
+        text-align: right;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    .project-image {
+        width: 70%;
+        float: right;
+        margin-top: 10px;
+    }
+    .project .project-content {
+        width: 30%;
+        float: left;
+        padding-right: 10px;
+        box-sizing: border-box;
+        text-align: right;
+    }
 }
 
 /* ==========================================================================
