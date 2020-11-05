@@ -624,6 +624,16 @@ footer #copyright {
     footer #copyright {
         font-size: 0.75em;
     }
+    #gallery-main #portfolio .content-wrapper {
+        height: auto;
+    }
+    #gallery-main .project {
+        width: 100%;
+        overflow: visible;
+    }
+    #gallery-main .project .project-image {
+        padding: 0;
+    }
 }
 
 /* ==========================================================================
