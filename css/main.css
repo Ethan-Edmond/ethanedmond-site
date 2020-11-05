@@ -295,9 +295,10 @@ footer #copyright {
 }
 
 #gallery-main #portfolio #gallery-button-board h2 {
-    font-weight: 700;
+    font-weight: 100;
     width: auto;
     margin-bottom: 0;
+    cursor: pointer;
 }
 
 #gallery-main #portfolio .project {
