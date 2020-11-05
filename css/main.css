@@ -129,13 +129,13 @@ a {
 }
 
 #hero-area {
-    background-image: url("../img/glitch-art-background-1.png");
+    background-image: url("../img/glitch-art-background-1-low-contrast2.png");
     background-size: cover;
     background-position: right bottom;
     margin: 0;
     width: 100%;
     height: 406px;
-    color: #101519;
+    color: white;
 }
 
 h1 {
@@ -149,6 +149,10 @@ h1 {
     padding-right: 30%;
     font-weight: 700;
     margin-bottom: 0;
+}
+
+#hero-area .content-wrapper {
+    padding-bottom: 30px;
 }
 
 h2 {
