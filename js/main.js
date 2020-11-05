@@ -29,13 +29,18 @@ for (let i = 0; i < buttonList.length; i++) {
 }
 
 // This is the code for the gallery carousel
-var galleryMain = document.getElementById("gallery-main");
-var galleryWrapper = galleryMain.children[0].children[0].children;
-var galleryButtonBoard = galleryWrapper[0].children;
-var galleryProjects = [];
-for (let i = 1; i < galleryWrapper.length; i++){
-  galleryProjects.push(galleryWrapper[i]);
-}
+var galleryButtonBoard = document.getElementById("gallery-button-board").children;
+var makeGallery = function () {
+  var galleryMain = document.getElementById("gallery-main");
+  var galleryWrapper = galleryMain.children[0].children[0].children;
+  var galleryProjects = [];
+  for (let i = 1; i < galleryWrapper.length; i++){
+    galleryProjects.push(galleryWrapper[i]);
+  }
+  return galleryProjects;
+};
+
+var galleryProjects = makeGallery();
 
 var currentGalleryIndex = 0;
 galleryProjects[currentGalleryIndex].style.display = "block";
