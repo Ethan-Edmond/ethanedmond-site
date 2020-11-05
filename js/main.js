@@ -21,7 +21,40 @@ var makeButton = function (name) {
   return button;
 };
 
-var buttonList = ["gallery-button", "about-button", "project-button", "about-sect-button", "unplugged-button", "magic-8-button", "rogue-button"];
+var buttonList = ["gallery-button", "about-button", "home-button", "project-button", "about-sect-button", "unplugged-button", "magic-8-button", "rogue-button"];
 for (let i = 0; i < buttonList.length; i++) {
-  buttonList[i] = makeButton(buttonList[i]);
+  if (document.getElementById(buttonList[i]) != null) {
+    buttonList[i] = makeButton(buttonList[i]);
+  }
 }
+
+// This is the code for the gallery carousel
+var galleryMain = document.getElementById("gallery-main");
+var galleryWrapper = galleryMain.children[0].children[0].children;
+var galleryButtonBoard = galleryWrapper[0].children;
+var galleryProjects = [];
+for (let i = 1; i < galleryWrapper.length; i++){
+  galleryProjects.push(galleryWrapper[i]);
+}
+
+var currentGalleryIndex = 0;
+galleryProjects[currentGalleryIndex].style.display = "block";
+
+var galleryCycleForward = function () {
+  galleryProjects[currentGalleryIndex].style.display = "none";
+  currentGalleryIndex += 1;
+  currentGalleryIndex = currentGalleryIndex % galleryProjects.length;
+  galleryProjects[currentGalleryIndex].style.display = "block";
+};
+
+var galleryCycleBack = function () {
+  galleryProjects[currentGalleryIndex].style.display = "none";
+  currentGalleryIndex -= 1;
+  if (currentGalleryIndex < 0) {
+    currentGalleryIndex = galleryProjects.length - 1;
+  }
+  galleryProjects[currentGalleryIndex].style.display = "block";
+};
+
+galleryButtonBoard[0].addEventListener("click", galleryCycleBack);
+galleryButtonBoard[1].addEventListener("click",galleryCycleForward);

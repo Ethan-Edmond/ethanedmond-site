@@ -128,7 +128,7 @@ a {
     box-sizing: border-box;
 }
 
-#hero-area {
+#main-hero {
     background-image: url("../img/glitch-art-background-1-low-contrast2.png");
     background-size: cover;
     background-position: right bottom;
@@ -145,13 +145,13 @@ h1 {
     font-size: 2.25em;
 }
 
-#hero-area h2 {
+.hero-area h2 {
     padding-right: 30%;
     font-weight: 700;
     margin-bottom: 0;
 }
 
-#hero-area .content-wrapper {
+.hero-area .content-wrapper {
     padding-bottom: 30px;
 }
 
@@ -177,6 +177,7 @@ h3 {
 #portfolio .content-wrapper {
     padding: 24px 0 0 0;
 }
+
 
 #portfolio h2 {
     padding: 0px 6%;
@@ -275,6 +276,37 @@ footer #social {
 footer #copyright {
     text-align: center;
     font-size: 0.8em;
+}
+
+#gallery-main #portfolio .content-wrapper {
+    padding: 0;
+    background-image: url("../img/glitch-art-background-1-low-contrast2.png");
+    background-size: cover;
+    height: 762px;
+}
+
+#gallery-main #portfolio #gallery-button-board {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#gallery-main #portfolio #gallery-button-board h2 {
+    font-weight: 700;
+    width: auto;
+    margin-bottom: 0;
+}
+
+#gallery-main #portfolio .project {
+    display: none;
+    padding: 0;
+}
+
+#gallery-main #portfolio .project h3, #gallery-main #portfolio .project p {
+    padding: 0 6%;
 }
 
 
@@ -382,19 +414,20 @@ footer #copyright {
         font-size: 1.125em;
         margin: 5px 0;
     }
-    #hero-area {
+    #main-hero {
         height: 512px;
     }
+
     ul {
         padding-right: 66%;
         padding-left: 4%;
         justify-content: space-between;
     }
-    #hero-area .content-wrapper {
+    .hero-area .content-wrapper {
         width: 80%;
         padding-left: 4%;
     }
-    #hero-area h2 {
+    .hero-area h2 {
         padding-right: 0;
     }
     #portfolio h2 {
@@ -493,14 +526,14 @@ footer #copyright {
         font-size: 5em;
         padding: 0;
     }
-    #hero-area {
+    #main-hero {
         height: 800px;
     }
-    #hero-area h2 {
+    .hero-area h2 {
         padding: 60px 14%;
         font-size: 2em;
     }
-    #hero-area .content-wrapper {
+    .hero-area .content-wrapper {
         padding: 170px 2% 0;
         text-align: center;
         width: 100%;
