@@ -21,7 +21,7 @@ var makeButton = function (name) {
   return button;
 };
 
-var buttonList = ["gallery-button", "about-button", "home-button", "project-button", "about-sect-button", "unplugged-button", "magic-8-button", "rogue-button"];
+var buttonList = ["gallery-button", "about-button", "home-button", "project-button", "about-sect-button", "unplugged-button", "magic-8-button", "rogue-button", "gallery-previous-button", "gallery-next-button"];
 for (let i = 0; i < buttonList.length; i++) {
   if (document.getElementById(buttonList[i]) != null) {
     buttonList[i] = makeButton(buttonList[i]);
