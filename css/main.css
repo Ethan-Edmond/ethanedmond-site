@@ -310,6 +310,12 @@ footer #copyright {
     padding: 0 6%;
 }
 
+#about-main .content-wrapper {
+    background-image: url("../img/glitch-art-background-1-low-contrast2.png");
+    background-size: cover;
+    overflow: auto;
+}
+
 
 /* ==========================================================================
    Helper classes
