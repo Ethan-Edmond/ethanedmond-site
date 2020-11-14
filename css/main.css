@@ -200,16 +200,15 @@ h3 {
 }
 
 #about {
-    background-image: url("../img/glitch-art-background-3.png");
+    background-image: url("../img/glitch-art-background-3-low-contrast.png");
     background-size: cover;
-    background-position: 65% 100%;
+    background-position: left bottom;
     padding-bottom: 30px;
 }
 
 #about h2 {
     margin-bottom: 20px;
 }
-
 
 #about h3 {
     margin: 0 0 8px 0;
