@@ -96,24 +96,6 @@ html {
     color: white;
 }
 
-/* ul { */
-/*     color: white; */
-/*     display: flex; */
-/*     justify-content: space-evenly; */
-/*     align-items: center; */
-/*     list-style-type: none; */
-/*     font-family: "IBM Plex Mono"; */
-/*     font-size: 1.5em; */
-/*     font-weight: 100; */
-/*     font-style: italic; */
-/*     margin: 0; */
-/*     padding: 8px 0; */
-/*     background: #40454a; */
-/*     text-transform: capitalize; */
-/*     border: 0px solid #464b50; */
-/*     border-width: 0 0 1px 0; */
-/* } */
-
 a {
     padding: 8px 0;
     text-decoration: inherit;
@@ -296,45 +278,6 @@ footer #copyright {
     font-size: 0.8em;
 }
 
-#gallery-main #portfolio .content-wrapper {
-    padding: 0;
-    background-image: url("../img/glitch-art-background-1-low-contrast2.png");
-    background-size: cover;
-    height: 762px;
-}
-
-#gallery-main #portfolio #gallery-button-board {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-    padding-top: 10px;
-    width: 100%;
-}
-
-#gallery-main #portfolio #gallery-button-board h2 {
-    font-weight: 100;
-    width: auto;
-    margin-bottom: 0;
-    cursor: pointer;
-}
-
-#gallery-main #portfolio .project {
-    display: none;
-    padding: 0;
-}
-
-#gallery-main #portfolio .project h3, #gallery-main #portfolio .project p {
-    padding: 0 6%;
-}
-
-#about-main .content-wrapper {
-    background-image: url("../img/glitch-art-background-1-low-contrast2.png");
-    background-size: cover;
-    overflow: auto;
-}
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -443,11 +386,6 @@ footer #copyright {
         height: 512px;
     }
 
-    ul {
-        padding-right: 66%;
-        padding-left: 4%;
-        justify-content: space-between;
-    }
     .hero-area .content-wrapper {
         width: 80%;
         padding-left: 4%;
@@ -526,8 +464,10 @@ footer #copyright {
     }
     footer .fontawesome-icon {
         font-size: 3em;
+    }
+    footer #contact .fontawesome-icon {
         position: relative;
-        top: 4px;
+        top: 8px;
     }
     footer .contact-item {
         display: flex;
@@ -542,21 +482,9 @@ footer #copyright {
     footer #copyright {
         font-size: 1.25em;
     }
-    #gallery-main #portfolio .content-wrapper {
-        height: 1024px;
-    }
-    #gallery-main .project-image, #gallery-main .project h3, #gallery-main .project .project-content {
-        width: 100%;
-        text-align: center;
-        float: none;
-    }
 }
 
 @media (min-width: 1200px) {
-    ul {
-        padding-right: 80%;
-        padding-left: 2%;
-    }
     h1 {
         font-size: 5em;
         padding: 0;
@@ -627,10 +555,6 @@ footer #copyright {
         flex-flow: row wrap;
         padding: 28px 2%;
     }
-    footer i {
-        position: relative;
-        top: 4px;
-    }
     footer .contact-text {
         font-size: 1.25em;
     }
@@ -640,7 +564,7 @@ footer #copyright {
         flex-flow: row wrap;
         align-items: flex-start;
         padding-left: 0%;
-        margin: 36px 0;
+        margin: 18px 0;
     }
     footer #social {
         width: 49%;
@@ -649,21 +573,8 @@ footer #copyright {
         margin: 34px 0;
         padding: 0 5% 0 0;
     }
-    footer #contact .fontawesome-icon {
-        top: 0px;
-    }
     footer #copyright {
         font-size: 0.75em;
-    }
-    #gallery-main #portfolio .content-wrapper {
-        height: auto;
-    }
-    #gallery-main .project {
-        width: 100%;
-        overflow: visible;
-    }
-    #gallery-main .project .project-image {
-        padding: 0;
     }
 }
 
