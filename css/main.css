@@ -200,7 +200,7 @@ h3 {
 }
 
 #portfolio img:hover {
-    border: 3px solid salmon;
+    border: 2px solid salmon;
 }
 
 .project {
@@ -622,6 +622,10 @@ footer #copyright {
     footer .content-wrapper {
         flex-flow: row wrap;
         padding: 28px 2%;
+    }
+    footer i {
+        position: relative;
+        top: 4px;
     }
     footer .contact-text {
         font-size: 1.25em;
