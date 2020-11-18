@@ -96,23 +96,23 @@ html {
     color: white;
 }
 
-ul {
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    font-family: "IBM Plex Mono";
-    font-size: 1.5em;
-    font-weight: 100;
-    font-style: italic;
-    margin: 0;
-    padding: 8px 0;
-    background: #40454a;
-    text-transform: capitalize;
-    border: 0px solid #464b50;
-    border-width: 0 0 1px 0;
-}
+/* ul { */
+/*     color: white; */
+/*     display: flex; */
+/*     justify-content: space-evenly; */
+/*     align-items: center; */
+/*     list-style-type: none; */
+/*     font-family: "IBM Plex Mono"; */
+/*     font-size: 1.5em; */
+/*     font-weight: 100; */
+/*     font-style: italic; */
+/*     margin: 0; */
+/*     padding: 8px 0; */
+/*     background: #40454a; */
+/*     text-transform: capitalize; */
+/*     border: 0px solid #464b50; */
+/*     border-width: 0 0 1px 0; */
+/* } */
 
 a {
     padding: 8px 0;
@@ -182,6 +182,7 @@ h3 {
 
 #portfolio {
     margin: 0;
+    border: 1px solid #101519;
 }
 
 #portfolio .content-wrapper {
@@ -201,6 +202,7 @@ h3 {
 
 #portfolio img:hover {
     border: 2px solid salmon;
+    border-width: 2px 2px 1px;
 }
 
 .project {
@@ -219,6 +221,8 @@ h3 {
     background-size: cover;
     background-position: left bottom;
     padding-bottom: 30px;
+    border: 1px solid #101519;
+    border-width: 1px 1px 0;
 }
 
 #about h2 {
