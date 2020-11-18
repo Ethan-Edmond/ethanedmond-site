@@ -120,6 +120,16 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: salmon;
+    font-weight: bold;
+}
+
+em {
+    font-style: normal;
+    color: salmon;
+}
+
 .content-wrapper {
     padding-top: 24px;
     padding-left: 6%;
@@ -186,6 +196,11 @@ h3 {
 
 #portfolio img {
     width: 100%;
+    box-sizing: border-box;
+}
+
+#portfolio img:hover {
+    border: 3px solid salmon;
 }
 
 .project {
@@ -507,6 +522,8 @@ footer #copyright {
     }
     footer .fontawesome-icon {
         font-size: 3em;
+        position: relative;
+        top: 4px;
     }
     footer .contact-item {
         display: flex;
@@ -625,7 +642,7 @@ footer #copyright {
         padding: 0 5% 0 0;
     }
     footer #contact .fontawesome-icon {
-        font-size: 1.75em;
+        top: 0px;
     }
     footer #copyright {
         font-size: 0.75em;
